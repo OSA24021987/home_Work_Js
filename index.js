@@ -75,7 +75,7 @@ for (let i = 2; i <= yourNumber; i++) {
         i = 1;
     }
 }
-*/   
+*/
 //---------------------------------------------------------------------------
 
 // Задача №4.
@@ -190,4 +190,127 @@ while (i == 0) {
 alert('До свидания!');
 */
 //---------------------------------------------------------------------------------
+
+// Задача №7.
+/*
+let userDigital = prompt('введите число', '');
+let sdvig = prompt('введите сдвиг', '');
+let remains_1 = 0;
+let remains_2 = 0;
+let divisor = 10;
+
+if (sdvig < 0) {
+    sdvig = sdvig * (-1);
+    for (let i = 1; i <= sdvig; i++) {
+        divisor = 10 ** i;
+        remains_1 = userDigital % divisor;
+        remains_2 = Math.floor(userDigital / divisor);
+        remains_1 = String(remains_1);
+        remains_2 = String(remains_2);
+
+        console.log(`divisor = ${divisor} - делитель`);
+        console.log(`remains_1 = ${remains_1} - остоток_1`);
+        console.log(`remains_2 = ${remains_2} - остаток_2`);
+        console.log(`-------------------------`);
+    }
+
+}
+
+else if (sdvig > 0 && +sdvig != userDigital.length) {
+    for (let i = userDigital.length; i >= userDigital.length - sdvig; i--) {
+        divisor = 10 ** i;
+        remains_1 = userDigital % divisor;
+        remains_2 = Math.floor(userDigital / divisor);
+        remains_1 = String(remains_1);
+        remains_2 = String(remains_2);
+
+        console.log(divisor);
+        console.log(remains_1);
+        console.log(remains_2);
+    }
+
+}
+
+else if (sdvig === 0 || +sdvig === userDigital.length) {
+    remains_1 = userDigital; 
+    remains_2 = '';
+}
+
+alert(remains_1 + remains_2);
+*/
+//-------------------------------------------------------------------------
+
+// Задача №8.
+/*
+let user_Question_1 = confirm('Понедедьник!Хотите увидеть следующий день?', '');
+if (user_Question_1 === true) {
+    for(let i = 0; i <= 6; i++) {
+        if (i === 0) {
+            let user_Question_2 = confirm('Вторник!Хотите увидеть следующий день?', '');  
+            if (user_Question_2 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 1) {
+            let user_Question_3 = confirm('Среда!Хотите увидеть следующий день?', '');  
+            if (user_Question_3 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 2) {
+            let user_Question_4 = confirm('Четверг!Хотите увидеть следующий день?', '');  
+            if (user_Question_4 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 3) {
+            let user_Question_5 = confirm('Пятница!Хотите увидеть следующий день?', '');  
+            if (user_Question_5 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 4) {
+            let user_Question_6 = confirm('Суббота!Хотите увидеть следующий день?', '');  
+            if (user_Question_6 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 5) {
+            let user_Question_7 = confirm('Воскресение!Хотите увидеть следующий день?', '');  
+            if (user_Question_7 === true) {
+                i;
+            }
+            else {break;}
+        }
+        else if (i === 6) {
+            let user_Question_8 = confirm('Понедельник!Хотите увидеть следующий день?', '');  
+            if (user_Question_8 === true) {
+                i = -1;
+            }
+            else {break;}
+        }
+    }
+}  
+
+alert('До свидания!');
+*/
+
+// Задача №9.
+
+/*
+for (i = 2; i <= 9; i++) {
+    for (j = 1; j <= 10; j++) {
+        let rezulnMultiplication = i * j;
+        console.log(`${i} * ${j} = ${rezulnMultiplication}`);
+    }
+    console.log('----------------')
+}
+*/
+
+// Задача №10.
 
